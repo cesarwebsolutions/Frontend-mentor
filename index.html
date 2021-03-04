@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | FAQ Accordion Card</title>
+  
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    
+    
+  </style>
+</head>
+<body>
+  <section class="container">
+    <div class="imagem">
+      <img class="cubo" src="./images/illustration-box-desktop.svg" alt="">
+      <img src="./images/illustration-woman-online-desktop.svg" alt="">
+    </div>
+    <div class="texto">
+      <h2>FAQ</h2>
+      <div class="box">
+        <p id="1" class="pergunta">How many team members can I invite?</p>
+        <div id="divConteudo1" class="hidden">
+          <p class="resposta">You can invite up to 2 additional users on the Free plan. There is no limit on 
+          team members for the Premium plan.</p>
+        </div>
+        <div class="arrow">
+          <button class="arrow" onclick="ocultarExibir('divConteudo1')">
+            <img src="./images/icon-arrow-down.svg" alt="icon-arrow">
+          </button>
+        </div>
+          <hr class="linha">
+        </div>
+        
+        <div class="box">
+          <p class="pergunta" class="hidden">What is the maximum file upload size?</p>
+          <div id="divConteudo2" class="hidden">
+            <p class="resposta">No more than 2GB. All files in your account must fit your allotted storage space.</p>
+          </div>
+          <div class="arrow">
+            <button class="arrow" onclick="ocultarExibir('divConteudo2')">
+              <img src="./images/icon-arrow-down.svg" alt="icon-arrow">
+            </button>
+          </div>
+          <hr class="linha">
+        </div>
+        
+        <div class="box">
+          <p class="pergunta">How do I reset my password?</p>
+          <div id="divConteudo3" class="hidden">
+            <p class="resposta">Click “Forgot password” from the login page or “Change password” from your profile page.
+              A reset link will be emailed to you.</p>
+          </div>
+          <div class="arrow">
+            <button class="arrow" onclick="ocultarExibir('divConteudo3')">
+              <img src="./images/icon-arrow-down.svg" alt="icon-arrow">
+            </button>
+          </div>
+            <hr class="linha">
+          </div>
+          
+          <div class="box">
+            <p class="pergunta">Can I cancel my subscription?</p>
+            <div id="divConteudo4" class="hidden">
+              <p class="resposta">Yes! Send us a message and we’ll process your request no questions asked.</p>
+            </div>
+            <div class="arrow">
+              <button class="arrow" onclick="ocultarExibir('divConteudo4')">
+                <img src="./images/icon-arrow-down.svg" alt="icon-arrow">
+              </button>
+            </div>
+            <hr class="linha">
+          </div>
+          
+          <div class="box">
+            <p class="pergunta">Do you provide additional support?</p>
+            <div id="divConteudo5" class="hidden">
+              <p class="resposta">Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+            </div>
+            <div class="arrow">
+              <button class="arrow" onclick="ocultarExibir('divConteudo5')">
+                <img src="./images/icon-arrow-down.svg" alt="icon-arrow">
+              </button>
+            </div>
+            <hr class="linha">
+          </div>
+        </div>
+      </section>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Your Name Here</a>.
+      </div>
+
+    <script src="./main.js"></script>
+    </body>
+    </html>
